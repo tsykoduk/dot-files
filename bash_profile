@@ -12,6 +12,10 @@ PATH=/usr/local/bin:$PATH
 #PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 ### Added for rubygems + homebrew support
 export PATH=$(brew --prefix ruby)/bin:$PATH
+#Support for Ruby Gems
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
+export PATH=/usr/local/lib/ruby/gems/2.6.0/bin:$PATH
 ### Added for Python under Homebrew
 ### Removed because ¯\_(ツ)_/¯ python
 #PATH=/usr/local/share/python:$PATH
@@ -19,6 +23,7 @@ export PATH=$(brew --prefix ruby)/bin:$PATH
 #source .bashrc
 
 PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+
 
 export EDITOR=mate
 export PATH=/usr/local/sbin:$PATH
