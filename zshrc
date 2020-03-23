@@ -15,7 +15,8 @@ PATH=/usr/local/bin:$PATH
 export PATH=$(brew --prefix ruby)/bin:$PATH
 #Support for Ruby Gems
 export PATH=/usr/local/opt/ruby/bin:$PATH
-export PATH=/usr/local/lib/ruby/gems/2.6.0/bin:$PATH
+#we need to flow this with the current ruby version I guess?
+export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
 ### Added for Python under Homebrew
 ### Removed because ¯\_(ツ)_/¯ python
 #PATH=/usr/local/share/python:$PATH
@@ -38,3 +39,4 @@ echo ""
 echo ""
 
 # fortune -s | cowthink | lolcat
+
