@@ -11,12 +11,17 @@ export CLICOLOR=1
 PATH=/usr/local/bin:$PATH
 ### Added to install the GNU toolset
 #PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
+### Added to install the GNU toolset
+#PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 ### Added for rubygems + homebrew support
-export PATH=$(brew --prefix ruby)/bin:$PATH
-#Support for Ruby Gems
-export PATH=/usr/local/opt/ruby/bin:$PATH
-#we need to flow this with the current ruby version I guess?
-export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:$PATH
+# export PATH=$(brew --prefix ruby)/bin:$PATH
+# Support for Ruby Gems
+# export PATH=/usr/local/opt/ruby/bin:$PATH
+
+# Let's try rbenv
+eval "$(rbenv init -)"
+
 ### Added for Python under Homebrew
 ### Removed because ¯\_(ツ)_/¯ python
 #PATH=/usr/local/share/python:$PATH
